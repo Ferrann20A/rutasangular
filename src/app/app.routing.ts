@@ -5,6 +5,8 @@ import { MusicaComponent } from "./components/musica/musica.component";
 import { Routes, RouterModule } from "@angular/router";
 import {ModuleWithProviders} from '@angular/core';
 import { Error404Component } from "./components/error404/error404.component";
+import { NumerodobleComponent } from "./components/numerodoble/numerodoble.component";
+import { CollatzComponent } from "./components/collatz/collatz.component";
 
 //Definimos un array con nuestras rutas para los components
 const appRoutes: Routes = [
@@ -16,6 +18,15 @@ const appRoutes: Routes = [
     },
     {
         path:"musica", component: MusicaComponent
+    },
+    {
+        path:"numerodoble", component: NumerodobleComponent
+    },
+    {
+        path:"numerodoble/:numero", component: NumerodobleComponent
+    },
+    {
+        path:"collatz/:number", component: CollatzComponent
     },
     {
         path:"**", component: Error404Component

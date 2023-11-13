@@ -1,0 +1,7 @@
+<div>
+    <ul>
+        <li *ngFor="let a of aleatorios">
+            <a [routerLink]="['/collatz', a]">Collatz {{a}}</a>
+        </li>
+    </ul>
+</div>
